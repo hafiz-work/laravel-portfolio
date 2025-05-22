@@ -1,0 +1,19 @@
+models:
+  Alumni:
+    name: string
+    email: string unique
+    phone_number: string
+    date_of_birth: date
+    gender: enum:male,female
+    ic_no: string unique
+    is_active: boolean default:false
+    avatar: string nullable
+    info: string nullable
+    add_unit: string nullable
+    add_level: string nullable
+    add_block: string nullable
+    address_1: string nullable
+    address_2: string nullable
+    postcode: string nullable
+    city: string nullable
+    state: string nullable

@@ -1,0 +1,7 @@
+created:
+    - database/factories/AlumniFactory.php
+    - database/migrations/2025_05_21_063731_create_alumnis_table.php
+    - app/Models/Alumni.php
+models:
+    User: { name: string, email: string, email_verified_at: 'timestamp nullable', password: string, remember_token: 'string:100 nullable' }
+    Alumni: { name: string, email: 'string unique', phone_number: string, date_of_birth: date, gender: 'enum:male,female', ic_no: 'string unique', is_active: 'boolean default:false', avatar: 'string nullable', info: 'string nullable', add_unit: 'string nullable', add_level: 'string nullable', add_block: 'string nullable', address_1: 'string nullable', address_2: 'string nullable', postcode: 'string nullable', city: 'string nullable', state: 'string nullable' }
